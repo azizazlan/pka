@@ -7,6 +7,8 @@ import App from './App';
 
 import routes from './routes';
 
+document.title = import.meta.env.VITE_SLD_MODULE || "Solid App";
+
 const root = document.getElementById('root');
 
 if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
