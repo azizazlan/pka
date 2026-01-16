@@ -18,7 +18,7 @@ const Login = () => {
   };
 
   return (
-    <div class="min-h-screen flex items-center justify-center">
+    <div class="min-h-screen flex items-center justify-center bg-gray-50">
       <div class="bg-white rounded-md shadow-sm p-10 w-full max-w-sm space-y-4 transform -translate-y-3/3">
         <div class="flex items-center gap-2 justify-center">
           <Factory size={32} class="inline-block" />
