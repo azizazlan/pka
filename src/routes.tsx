@@ -4,10 +4,11 @@ import { JSX } from 'solid-js';
 
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
+import CertifierPage from './pages/CertifierPage';
 import PublicLayout from './layouts/PublicLayout';
 import AuthenticatedLayout from './layouts/AuthenticatedLayout';
 import ProtectedRoute from './layouts/ProtectedRoute';
-
+import VehicleMakeModelsPage from './pages/VehicleMakeModelsPage';
 
 const routes: RouteDefinition[] = [
   {
@@ -24,6 +25,26 @@ const routes: RouteDefinition[] = [
       <ProtectedRoute>
         <AuthenticatedLayout>
           <Dashboard />
+        </AuthenticatedLayout>
+      </ProtectedRoute>
+    ),
+  },
+  {
+    path: '/certifier',
+    component: () => (
+      <ProtectedRoute>
+        <AuthenticatedLayout>
+          <CertifierPage />
+        </AuthenticatedLayout>
+      </ProtectedRoute>
+    ),
+  },
+  {
+    path: '/Vehicle_make_models',
+    component: () => (
+      <ProtectedRoute>
+        <AuthenticatedLayout>
+          <VehicleMakeModelsPage />
         </AuthenticatedLayout>
       </ProtectedRoute>
     ),

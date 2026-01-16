@@ -5,7 +5,7 @@ import { Factory, Wrench, Van } from 'lucide-solid';
 
 const Login = () => {
   const navigate = useNavigate();
-  const [username, setUsername] = createSignal("");
+  const [username, setUsername] = createSignal("admin");
   const [password, setPassword] = createSignal("");
   const [error, setError] = createSignal("");
 

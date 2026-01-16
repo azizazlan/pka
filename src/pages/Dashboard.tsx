@@ -21,8 +21,8 @@ const Dashboard: Component = () => {
             </p>
 
             <button
-              onClick={() => navigate("/verifiers")}
-              class="bg-blue-900 hover:bg-blue-600 text-white px-5 py-2 rounded text-sm"
+              onClick={() => navigate("/certifier")}
+              class="bg-blue-600 hover:bg-blue-600 text-white px-5 py-2 rounded text-sm"
             >
               Kemaskini Maklumat
             </button>
@@ -39,8 +39,8 @@ const Dashboard: Component = () => {
             </p>
 
             <button
-              onClick={() => navigate("/models")}
-              class="bg-blue-900 hover:bg-blue-600 text-white px-5 py-2 rounded text-sm"
+              onClick={() => navigate("/vehicle_make_models")}
+              class="bg-blue-600 hover:bg-blue-600 text-white px-5 py-2 rounded text-sm"
             >
               Kemaskini Senarai
             </button>
