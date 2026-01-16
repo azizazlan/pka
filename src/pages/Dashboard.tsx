@@ -6,6 +6,9 @@ const Dashboard: Component = () => {
 
   return (
     <div class="p-1 min-h-full bg-white">
+      <h1 class="text-xl font-semibold text-gray-800 mb-4">
+        {import.meta.env.VITE_SLD_MODULE_DESC}
+      </h1>
       <div class="max-w-5xl">
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">

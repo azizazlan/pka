@@ -68,7 +68,7 @@ export default function CertifierPage() {
 
         <form
           onSubmit={handleSubmit}
-          class="mt-8 w-full bg-white rounded border border-gray-300 shadow-sm p-6"
+          class="mt-3 w-full bg-white rounded border border-gray-300 shadow-sm p-6"
         >
           <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Lokasi */}
