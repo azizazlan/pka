@@ -1,4 +1,5 @@
 import { createSignal, For } from "solid-js";
+import { useNavigate } from "@solidjs/router";
 
 type VehicleModel = {
   model: string;
@@ -10,6 +11,8 @@ type VehicleMake = {
 };
 
 export default function VehicleMakeModelsPage() {
+  const navigate = useNavigate();
+
   const [vehicleMakes] = createSignal<VehicleMake[]>([
     {
       make: "Volvo Trucks",
@@ -78,7 +81,19 @@ export default function VehicleMakeModelsPage() {
   ]);
 
   return (
-    <main class="w-full min-h-screen bg-gray-50 px-6 py-8">
+    <main class="relative w-full min-h-screen px-6 py-8">
+      {/* Close button */}
+      <button
+        type="button"
+        onClick={() => navigate("/dashboard")}
+        aria-label="Tutup dan kembali ke papan pemuka"
+        class="absolute top-6 right-6 rounded-full p-2 text-gray-500
+               hover:bg-gray-200 hover:text-gray-800
+               focus:outline-none focus:ring-2 focus:ring-blue-500"
+      >
+        ✕
+      </button>
+
       <div class="w-full">
         <h1 class="text-2xl font-semibold text-gray-800">
           Buatan & Model Kenderaan
