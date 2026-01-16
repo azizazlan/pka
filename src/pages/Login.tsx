@@ -34,20 +34,23 @@ const Login = () => {
           placeholder="Username"
           value={username()}
           onInput={(e) => setUsername(e.currentTarget.value)}
-          class="w-full border px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+          class="w-full border border-gray-400 rounded px-3 py-2 text-sm
+         focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
+
 
         <input
           type="password"
           placeholder="Password"
           value={password()}
           onInput={(e) => setPassword(e.currentTarget.value)}
-          class="w-full border px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+          class="w-full border border-gray-400 rounded px-3 py-2 text-sm
+         focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
 
         <button
           onClick={submit}
-          class="w-full bg-blue-900 hover:bg-blue-800 text-white py-2 transition"
+          class="w-full rounded bg-blue-900 hover:bg-blue-800 text-white py-2 transition"
         >
           <span style={{ 'margin-right': '15px' }}>
             Login

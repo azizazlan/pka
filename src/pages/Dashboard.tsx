@@ -5,7 +5,7 @@ const Dashboard: Component = () => {
   const navigate = useNavigate();
 
   return (
-    <div class="p-8 min-h-full bg-white">
+    <div class="p-1 min-h-full bg-white">
       <div class="max-w-5xl">
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">

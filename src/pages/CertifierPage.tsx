@@ -45,7 +45,7 @@ export default function CertifierPage() {
   };
 
   return (
-    <main class="relative w-full min-h-screen px-6 py-8">
+    <main class="relative w-full px-1 py-1">
       {/* Close button */}
       <button
         type="button"

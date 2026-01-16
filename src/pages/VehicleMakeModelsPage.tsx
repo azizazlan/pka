@@ -81,7 +81,7 @@ export default function VehicleMakeModelsPage() {
   ]);
 
   return (
-    <main class="relative w-full min-h-screen px-6 py-8">
+    <main class="relative w-full px-1 py-1">
       {/* Close button */}
       <button
         type="button"
@@ -98,19 +98,19 @@ export default function VehicleMakeModelsPage() {
         <h1 class="text-2xl font-semibold text-gray-800">
           Buatan & Model Kenderaan
         </h1>
-        <p class="mt-2 text-sm text-gray-600">
+        <p class="mt-2  text-gray-600">
           Senarai buatan dan model kenderaan (trak & prime mover) yang dibenarkan
           untuk pengesahan.
         </p>
 
-        <div class="mt-8 overflow-x-auto bg-white border border-gray-300 rounded shadow-sm">
+        <div class="mt-8 overflow-x-auto bg-white border border-gray-100 rounded shadow-sm">
           <table class="w-full border-collapse">
             <thead class="bg-gray-100">
               <tr>
-                <th class="text-left px-4 py-3 text-sm font-medium text-gray-700 border-b w-1/4">
+                <th class="text-left px-4 py-3 font-medium text-gray-700 border-b w-1/4">
                   Buatan
                 </th>
-                <th class="text-left px-4 py-3 text-sm font-medium text-gray-700 border-b">
+                <th class="text-left px-4 py-3 font-medium text-gray-700 border-b">
                   Model Dibenarkan
                 </th>
               </tr>
@@ -120,16 +120,16 @@ export default function VehicleMakeModelsPage() {
               <For each={vehicleMakes()}>
                 {(make) => (
                   <tr class="hover:bg-gray-50 align-top">
-                    <td class="px-4 py-4 text-sm font-medium text-gray-800 border-b">
+                    <td class="px-4 py-4 font-medium text-gray-800 border-b border-gray-300">
                       {make.make}
                     </td>
-                    <td class="px-4 py-4 border-b">
+                    <td class="px-4 py-4 border-b border-gray-300">
                       <div class="flex flex-wrap gap-2">
                         <For each={make.models}>
                           {(m) => (
                             <span
                               class="inline-flex items-center rounded-full
-                                     bg-blue-50 px-3 py-1 text-xs
+                                     bg-blue-50 px-3 py-1 
                                      font-medium text-blue-700"
                             >
                               {m.model}
