@@ -1,7 +1,7 @@
 import { createSignal } from "solid-js";
 import { useNavigate } from "@solidjs/router";
 import { auth } from "../auth";
-import { Factory, Wrench, Van } from 'lucide-solid';
+import { ShieldCheck, Toolbox } from 'lucide-solid';
 
 const Login = () => {
   const navigate = useNavigate();
@@ -21,9 +21,10 @@ const Login = () => {
     <div class="min-h-screen flex items-center justify-center bg-gray-50">
       <div class="bg-white rounded-md shadow-sm p-10 w-full max-w-sm space-y-4 transform -translate-y-3/3">
         <div class="flex items-center gap-2 justify-center">
-          <Factory size={32} class="inline-block" />
-          <Van size={32} class="inline-block" />
-          <Wrench size={32} class="inline-block" />
+
+          <ShieldCheck size={32} class="inline-block" />
+          <Toolbox size={32} class="inline-block" />
+
           <span class="text-2xl font-bold">
             MySLD / {import.meta.env.VITE_SLD_MODULE}
           </span>

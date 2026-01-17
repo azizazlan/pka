@@ -1,5 +1,6 @@
 import { Component } from "solid-js";
 import { useNavigate } from "@solidjs/router";
+import { FileSearchCorner } from 'lucide-solid';
 
 const Dashboard: Component = () => {
   const navigate = useNavigate();
@@ -16,36 +17,36 @@ const Dashboard: Component = () => {
           {/* Pengesah */}
           <div class="border border-gray-400 rounded p-6 hover:shadow-sm transition">
             <h3 class="text-lg font-semibold text-gray-800 mb-2">
-              Pengesah Yang Diiktiraf
+              Rekod pendaftaran Pengesah / Pemasang Retrofit
             </h3>
 
             <p class="text-sm text-gray-600 mb-6">
-              Lokasi, nombor telefon dan emel pengesah.
+              Semak dan sahkan rekod pendaftaran Pengesah / Pemasang Retrofit (modul pendaftaran)
             </p>
 
             <button
               onClick={() => navigate("/certifier")}
               class="bg-blue-600 hover:bg-blue-600 text-white px-5 py-2 rounded text-sm"
             >
-              Kemaskini Maklumat
+              <FileSearchCorner size={16} class="inline-block" /> Semak Maklumat
             </button>
           </div>
 
           {/* Buatan & Model */}
           <div class="border border-gray-400 rounded p-6 hover:shadow-sm transition">
             <h3 class="text-lg font-semibold text-gray-800 mb-2">
-              Buatan & Model Kenderaan
+              Pemasangsan SLD
             </h3>
 
             <p class="text-sm text-gray-600 mb-6">
-              Senarai buatan dan model yang dibenarkan untuk pengesahan.
+              Semak & Sahkan rekod kemaskini pemasangan SLD (modul kemaskini)
             </p>
 
             <button
               onClick={() => navigate("/vehicle_make_models")}
               class="bg-blue-600 hover:bg-blue-600 text-white px-5 py-2 rounded text-sm"
             >
-              Kemaskini Senarai
+              Kemaskini pemasangan SLD
             </button>
           </div>
 
